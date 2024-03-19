@@ -57,7 +57,7 @@ async def do_removal(ctx: Context, limit, predicate, *, before=None, after=None)
 
 
 
-async def mod_chan_perms(self, ctx, chan: discord.TextChannel, targ: Union[discord.Member, discod.Role], perm_val: bool, view_perm: bool):
+async def mod_chan_perms(self, ctx, chan: discord.TextChannel, targ: Union[discord.Member, discord.Role], perm_val: bool, view_perm: bool):
     overwrites = chan.overwrites_for(targ)
     if overwrites is not None:
         if view_perm:
